@@ -9,4 +9,3 @@ models/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 !models/.gitkeep
-**/.DS_Store

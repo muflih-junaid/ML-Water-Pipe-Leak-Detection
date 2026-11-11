@@ -1,39 +1,13 @@
 import pandas as pd
 from pathlib import Path
-import pandas as pd
-from pathlib import Path
 
 DATA_DIR = Path("../data/raw/2018")
 
-pressure = pd.read_csv(
-    DATA_DIR / "2018_SCADA_Pressures.csv",
-    sep=";",
-    decimal=","
-)
-
-flow = pd.read_csv(
-    DATA_DIR / "2018_SCADA_Flows.csv",
-    sep=";",
-    decimal=","
-)
-
-demand = pd.read_csv(
-    DATA_DIR / "2018_SCADA_Demands.csv",
-    sep=";",
-    decimal=","
-)
-
-leakage = pd.read_csv(
-    DATA_DIR / "2018_Leakages.csv",
-    sep=";",
-    decimal=","
-)
-
-level = pd.read_csv(
-    DATA_DIR / "2018_SCADA_Levels.csv",
-    sep=";",
-    decimal=","
-)
+pressure = pd.read_csv(DATA_DIR / "2018_SCADA_Pressures.csv")
+flow = pd.read_csv(DATA_DIR / "2018_SCADA_Flows.csv")
+demand = pd.read_csv(DATA_DIR / "2018_SCADA_Demands.csv")
+leakage = pd.read_csv(DATA_DIR / "2018_Leakages.csv")
+level = pd.read_csv(DATA_DIR / "2018_SCADA_Levels.csv")
 
 datasets = {
     "pressure": pressure,
